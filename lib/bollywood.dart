@@ -9,6 +9,10 @@ class Bollywood extends StatelessWidget {
     "assets/audio/apna har din.mp3",
     "assets/audio/yara teri yari.mp3"
   ];
+  final pic=[
+    "assets/images/golmal.webp",
+    "assets/images/yara teri.jpg"
+  ];
 
 final ap=AssetsAudioPlayer();
   @override
@@ -32,6 +36,9 @@ final ap=AssetsAudioPlayer();
               border: Border.all(color: Colors.black12)),
             child: ListTile(
               title: Text(songName[index]),
+              leading: CircleAvatar(
+                backgroundImage: AssetImage(pic[index]),
+              ),
               onTap: (){
                 ap.stop();
                 ap.open(Audio(songs[index]));

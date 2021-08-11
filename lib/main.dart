@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_bollywood/bollywood.dart';
+import 'package:music_bollywood/hollywood.dart';
 void main()
 {
   runApp(MyApp());
@@ -14,9 +15,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
 final List _item=[
   Bollywood(),
-  Bollywood(),
-  Bollywood(),
-  Bollywood(),
+ HollyWood(),
+  Classical(),
+  Devotional(),
 ];
   int _currentState=0;
   @override
